@@ -1,11 +1,9 @@
-
-:root[data-theme="light"] {
+:root {
   --primary: #f49097;
   --primary-light: #fcd6da;
   --primary-dark: #a04e56;
-  --primary-contrast: #111;
-  --background: #fff;
-  --text: #212529;
+  --primary-contrast-light: #fff;
+  --primary-contrast-dark: #111;
   
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
@@ -18,21 +16,21 @@
   --gray-900: #212529;
 }
 
-:root[data-theme="dark"] {
-  --primary: #f49097;
-  --primary-light: #a04e56;
-  --primary-dark: #fcd6da;
-  --primary-contrast: #fff;
-  --background: #1a1a1a;
-  --text: #f8f9fa;
-  
-  --gray-900: #f8f9fa;
-  --gray-800: #e9ecef;
-  --gray-700: #dee2e6;
-  --gray-600: #ced4da;
-  --gray-500: #adb5bd;
-  --gray-400: #6c757d;
-  --gray-300: #495057;
-  --gray-200: #343a40;
-  --gray-100: #212529;
+/* Tema escuro: sobrescreve as variáveis quando [data-theme="dark"] estiver definido no <html> */
+[data-theme="dark"] {
+  --primary: #7a2e31;
+  --primary-light: #5f2628;
+  --primary-dark: #4a1f20;
+  --primary-contrast-light: #111;
+  --primary-contrast-dark: #fff;
+
+  --gray-100: #0f1113;
+  --gray-200: #141618;
+  --gray-300: #1b1d20;
+  --gray-400: #232528;
+  --gray-500: #3a3f44;
+  --gray-600: #6c757d;
+  --gray-700: #9aa0a5;
+  --gray-800: #cfd6db;
+  --gray-900: #f1f3f5;
 }
