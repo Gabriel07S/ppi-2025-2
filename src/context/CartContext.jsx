@@ -15,7 +15,7 @@ export function CartProvider({ children }) {
   // 🔹 Buscar produtos
   useEffect(() => {
     async function fetchProducts() {
-      const { data, error } = await supabase.from("product_1v").select();
+      const { data, error } = await supabase.from("product").select();
       if (error) console.error(error);
       setProducts(data || []);
       setLoading(false);
